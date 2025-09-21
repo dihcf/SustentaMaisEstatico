@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustenta+ | Pequenas ações, Grandes mudanças</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/registros.css">
+    <link rel="stylesheet" href="assets/css/responsive/globalResponsive.css">
+    <meta name="description" content="Site de vendas, trocas e doações de intens no municipio de General Sampaio. Com Foco em itens Reutilizaveis">
+    <link rel="icon" href="assets/images/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+     <nav class="nav">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <img src="assets/images/logos/logoSustenta.png" alt="">
+                        <img src="assets/images/logos/jose_bezerra_logo_transparent.png " alt="">
+                        <img src="assets/images/logos/generalSampaio.png" alt="">
+                    </div>
+
+                    <!-- Espaço reservado para três logos do projeto -->
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Pagina Inicial</a>
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#parcerias" class="nav-link">Parcerias</a>
+                    <a href="#contato" class="nav-contact-btn">Entre em Contato</a>
+                </div>
+                <!-- Menu mobile -->
+                <div class="mobile-menu-btn">
+                    <button id="menuToggle" class="menu-toggle">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            
+            <!-- Menu mobile expandido -->
+            <div id="mobileMenu" class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <a href="#sobre" class="mobile-nav-link">Registros
+
+                    </a>
+                    <a href="#servicos" class="mobile-nav-link">Serviços</a>
+                    <a href="#parcerias" class="mobile-nav-link">Parcerias</a>
+                    <a href="#contato" class="mobile-contact-btn">Entre em Contato</a>
+                </div>
+            </div>
+  </header>
+ <main>
+        <section class="hero">
+        <div class="hero-content">
+            <div class="hero-center">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span class="badge-text">EMEF José Bezerra Filho • General Sampaio - CE</span>
+                </div>
+                
+                <!-- Título principal -->
+                <div class="hero-title-section">
+                    <h1 class="hero-main-title">
+                        NOSSA <span class="title-plus">JORNADA</span> SUSTENTAVEL
+                    </h1>
+                
+                </div>
+                
+                <!-- Descrição -->
+                <p class="hero-description">
+                   Acompanhe todos os momentos especiais, atividades e conquistas do projeto Sustenta+. Cada registro conta uma história de transformação e consciência ambiental.
+                </p>
+            </div>
+        </section>
+         <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">
+                    Todos
+                </button>
+                <button class="filter-tab" data-filter="photos">
+                    Fotos
+                </button>
+                <button class="filter-tab" data-filter="videos">
+                    Vídeos
+                </button>
+           
+            </div>
+            
+            <div class="search-bar">
+                <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+                <input type="text" class="search-input" placeholder="Buscar por título, descrição ou categoria...">
+            </div>
+        </div>
+    </section>
+
+     <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- SLIDES DE FOTOS - Para adicionar novos slides, copie a estrutura abaixo e altere:
+                     - data-slide-count: número de fotos no slide
+                     - Adicione/remova divs .slide conforme necessário
+                     - Adicione/remova .indicator conforme o número de slides
+                     - Altere URLs das imagens, título, descrição, categoria e data -->
+                <div class="gallery-item photo-item slide-item" data-category="photos" data-slide-count="4">
+                    <div class="item-media">
+                        <div class="slide-container">
+                            <div class="slide active">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop" alt="Estudantes trabalhando com materiais recicláveis" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Criação de objetos com materiais reciclados" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&h=300&fit=crop" alt="Resultado final dos objetos criados" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=300&fit=crop" alt="Apresentação dos trabalhos" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <button class="slide-btn prev-btn">‹</button>
+                            <button class="slide-btn next-btn">›</button>
+                            <div class="slide-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="media-overlay">
+                            <span class="media-type">4 Fotos</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Oficina</span>
+                        <h3 class="item-title">Oficina de Reciclagem</h3>
+                        <p class="item-description">Estudantes aprendendo a criar objetos úteis com materiais recicláveis durante nossa primeira oficina prática.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                15 Mar 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOTOS ÚNICAS - Para adicionar novas fotos individuais, copie a estrutura abaixo e altere:
+                     - src da imagem
+                     - alt da imagem
+                     - Título, descrição, categoria e data -->
+                <div class="gallery-item photo-item" data-category="photos">
+                    <div class="item-media">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop" alt="Plantio de mudas nativas no jardim da escola" onerror="this.src=''; this.alt='Imagem não disponível'; this.style.display='none';">
+                        <div class="media-overlay">
+                            <span class="media-type">Foto</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Plantio</span>
+                        <h3 class="item-title">Plantio de Mudas</h3>
+                        <p class="item-description">Momento especial do plantio das primeiras mudas nativas no jardim da escola, envolvendo toda a turma.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                22 Mar 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item photo-item slide-item" data-category="photos" data-slide-count="3">
+                    <div class="item-media">
+                        <div class="slide-container">
+                            <div class="slide active">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Preparação dos ingredientes para sabão ecológico" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Processo de mistura dos ingredientes" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop&sat=-100" alt="Sabões ecológicos prontos" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <button class="slide-btn prev-btn">‹</button>
+                            <button class="slide-btn next-btn">›</button>
+                            <div class="slide-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="media-overlay">
+                            <span class="media-type">3 Fotos</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Oficina</span>
+                        <h3 class="item-title">Produção de Sabão Ecológico</h3>
+                        <p class="item-description">Alunos aprendendo a produzir sabão ecológico reutilizando óleo de cozinha usado.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                05 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item photo-item" data-category="photos">
+                    <div class="item-media">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop&hue=120" alt="Horta escolar com verduras crescendo" onerror="this.src=''; this.style.display='none';">
+                        <div class="media-overlay">
+                            <span class="media-type">Foto</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Horta</span>
+                        <h3 class="item-title">Horta Escolar em Crescimento</h3>
+                        <p class="item-description">Acompanhamento do desenvolvimento da horta escolar com verduras e temperos plantados pelos alunos.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                20 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item photo-item slide-item" data-category="photos" data-slide-count="5">
+                    <div class="item-media">
+                        <div class="slide-container">
+                            <div class="slide active">
+                                <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=300&fit=crop" alt="Lixeiras coloridas para coleta seletiva" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&hue=60" alt="Estudantes separando materiais recicláveis" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop&hue=180" alt="Materiais organizados por categoria" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=400&h=300&fit=crop&hue=240" alt="Placa informativa sobre reciclagem" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <div class="slide">
+                                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&h=300&fit=crop&hue=300" alt="Resultado da coleta seletiva" onerror="this.src=''; this.style.display='none';">
+                            </div>
+                            <button class="slide-btn prev-btn">‹</button>
+                            <button class="slide-btn next-btn">›</button>
+                            <div class="slide-indicators">
+                                <span class="indicator active"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                                <span class="indicator"></span>
+                            </div>
+                        </div>
+                        <div class="media-overlay">
+                            <span class="media-type">5 Fotos</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Coleta Seletiva</span>
+                        <h3 class="item-title">Estação de Reciclagem</h3>
+                        <p class="item-description">Nova estação de coleta seletiva instalada na escola com lixeiras coloridas para diferentes materiais.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                25 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vídeos -->
+                <!-- VÍDEOS - Para adicionar novos vídeos, copie a estrutura abaixo e altere:
+                     - data-video-url: URL do vídeo (YouTube, Vimeo, ou arquivo local)
+                     - Título, descrição, categoria e data
+                     - Ícone do placeholder se desejar -->
+                <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="item-media">
+                        <div class="media-placeholder">🎥</div>
+                        <div class="media-overlay">
+                            <span class="media-type">Vídeo</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Documentário</span>
+                        <h3 class="item-title">Documentário: Nossa Jornada Sustentável</h3>
+                        <p class="item-description">Vídeo documentário mostrando o desenvolvimento do projeto desde o início até os primeiros resultados.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                10 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="item-media">
+                        <div class="media-placeholder">🎬</div>
+                        <div class="media-overlay">
+                            <span class="media-type">Vídeo</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Tutorial</span>
+                        <h3 class="item-title">Como Fazer Composteira Caseira</h3>
+                        <p class="item-description">Tutorial passo a passo criado pelos próprios alunos ensinando a montar uma composteira em casa.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                18 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="item-media">
+                        <div class="media-placeholder">🎞️</div>
+                        <div class="media-overlay">
+                            <span class="media-type">Vídeo</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Apresentação</span>
+                        <h3 class="item-title">Feira de Ciências Sustentável</h3>
+                        <p class="item-description">Apresentação dos projetos dos alunos na feira de ciências com foco em sustentabilidade e meio ambiente.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                28 Abr 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item video-item" data-category="videos" data-video-url="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="item-media">
+                        <div class="media-placeholder">📹</div>
+                        <div class="media-overlay">
+                            <span class="media-type">Vídeo</span>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <span class="item-category">Depoimento</span>
+                        <h3 class="item-title">Depoimentos dos Alunos</h3>
+                        <p class="item-description">Estudantes compartilham suas experiências e aprendizados durante o projeto Sustenta+.</p>
+                        <div class="item-meta">
+                            <span class="item-date">
+                                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                02 Mai 2024
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    Carregar Mais Registros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div></div>
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media" id="modalMedia">
+                    <div class="media-placeholder">📸</div>
+                </div>
+                <h3 class="modal-title" id="modalTitle">Título do Item</h3>
+                <p class="modal-description" id="modalDescription">Descrição detalhada do item selecionado.</p>
+                <div class="modal-meta" id="modalMeta">
+                    <span>📅 Data</span>
+                    <span>📂 Categoria</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </main>
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div >
+                        <img src="assets/images/logos/logoSustenta.png" alt="" class="footer-icon">
+                    </div>
+                    <div class="footer-text">
+                        <div class="footer-title">Sustenta+</div>
+                        <div class="footer-subtitle">Pequenas ações, Grandes mudanças</div>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p class="footer-copyright">© 2024 Projeto Sustenta+. Todos os direitos reservados.</p>
+                    <p class="footer-location">EMEF José Bezerra Filho - General Sampaio, CE</p>
+                </div>
+            </div>
+        </div>
+  </footer>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/registros.js"></script>
+</body>
+</html>

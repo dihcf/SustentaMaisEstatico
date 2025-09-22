@@ -25,7 +25,7 @@
                 <div class="nav-links">
                     <a href="registros.html" class="nav-link">Registros</a>
                     <a href="#servicos" class="nav-link">Serviços</a>
-                    <a href="#parcerias" class="nav-link">Parcerias</a>
+                    
                     <a href="#contato" class="nav-contact-btn">Entre em Contato</a>
                 </div>
                 <!-- Menu mobile -->
@@ -45,7 +45,7 @@
 
                     </a>
                     <a href="#servicos" class="mobile-nav-link">Serviços</a>
-                    <a href="#parcerias" class="mobile-nav-link">Parcerias</a>
+                    
                     <a href="#contato" class="mobile-contact-btn">Entre em Contato</a>
                 </div>
             </div>
@@ -378,7 +378,7 @@
             <div class="contact-content">
                 <div class="contact-info-grid">
                     
-                    <div class="info-card blue-card">
+                    <div class="info-card blue-card" id="email-card">
                         <div class="blue-icon">
                             <img src="assets/images/icons/gmail.png" alt="" class="info-icon " >
                         </div>
@@ -389,7 +389,7 @@
                         </div>
                     </div>
                     
-                    <div class="info-card purple-card">
+                    <div class="info-card purple-card" id="whatsapp-card">
                         <div class="info-icon purple-icon">
                             <img src="assets/images/icons/whatsapp.png" alt="" class="info-icon " >
                         </div>
@@ -400,7 +400,22 @@
                     </div>
                 </div>
             </div>
-            
+            <div id="email-popup" class="custom-popup">
+  <div class="custom-popup-content">
+    <p>Email copiado com sucesso!</p>
+    <button class="custom-close-btn">OK</button>
+  </div>
+</div>
+
+<!-- Popup WhatsApp -->
+<div id="whatsapp-popup" class="custom-popup">
+  <div class="custom-popup-content">
+    <p>Você será redirecionado para o WhatsApp. Deseja continuar?</p>
+    <button id="confirm-whatsapp">Sim</button>
+    <button class="custom-close-btn">Não</button>
+  </div>
+</div>
+
             <!-- Call to action final -->
             <div class="contact-cta">
                 <h4 class="cta-title">Pronto para fazer a diferença?</h4>
